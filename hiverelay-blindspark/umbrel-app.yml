@@ -66,11 +66,11 @@ port: 9100
 # gallery CDN by app id, which 404s for community apps). Served via jsDelivr
 # so the SVG gets a correct image/svg+xml content-type (raw.githubusercontent
 # serves .svg as text/plain, which <img> won't render).
-icon: https://cdn.jsdelivr.net/gh/bigdestiny2/blindspark-umbrel-store@main/hiverelay-blindspark/icon.svg
+icon: https://cdn.jsdelivr.net/gh/bigdestiny2/blindspark-umbrel-store@25120ea501abd470d0d8d8c1026dd7bcde55c3b0/hiverelay-blindspark/icon.svg
 gallery:
-  - https://cdn.jsdelivr.net/gh/bigdestiny2/blindspark-umbrel-store@main/hiverelay-blindspark/1.png
-  - https://cdn.jsdelivr.net/gh/bigdestiny2/blindspark-umbrel-store@main/hiverelay-blindspark/2.png
-  - https://cdn.jsdelivr.net/gh/bigdestiny2/blindspark-umbrel-store@main/hiverelay-blindspark/3.png
+  - https://cdn.jsdelivr.net/gh/bigdestiny2/blindspark-umbrel-store@25120ea501abd470d0d8d8c1026dd7bcde55c3b0/hiverelay-blindspark/1.png
+  - https://cdn.jsdelivr.net/gh/bigdestiny2/blindspark-umbrel-store@25120ea501abd470d0d8d8c1026dd7bcde55c3b0/hiverelay-blindspark/2.png
+  - https://cdn.jsdelivr.net/gh/bigdestiny2/blindspark-umbrel-store@25120ea501abd470d0d8d8c1026dd7bcde55c3b0/hiverelay-blindspark/3.png
 path: ""
 defaultUsername: ""
 defaultPassword: ""
