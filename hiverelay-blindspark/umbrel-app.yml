@@ -1,7 +1,7 @@
 manifestVersion: 1
 id: hiverelay-blindspark
 category: networking
-name: Blindspark by HiveRelay
+name: Blindspark
 version: "0.14.0"
 tagline: A blind relay that keeps peer-to-peer apps online
 description: >-
