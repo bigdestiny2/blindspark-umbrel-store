@@ -21,8 +21,8 @@ services:
       APP_PORT: 9100
 
   web:
-    # Pinned by digest (verified to match the published :0.16.1 multi-arch index).
-    image: ghcr.io/bigdestiny2/p2p-hiverelay:0.16.1@sha256:b91e3fbfd892308b624f11208986cd64c7e143b4a142dccb8765d7b5fe0999fd
+    # Pinned by digest (verified to match the published :0.16.2 multi-arch index).
+    image: ghcr.io/bigdestiny2/p2p-hiverelay:0.16.2@sha256:76bf2e1963606c5bffefca66ee7729c8353b99caa280f751f5dd9eb059b51328
     init: true
     restart: on-failure
     stop_grace_period: 1m
@@ -36,6 +36,13 @@ services:
       # (config.json, the corestore, the relay keypair).
       HOME: /data
       HIVERELAY_LOG_LEVEL: info
+
+      # Serve the single-page Blindspark appliance dashboard instead of the
+      # full multi-tab operator UI — no Docs/GitHub, no payments/calculator/
+      # leaderboard tabs, just identity + live status. The full dashboard
+      # ships in the same image for PC node operators (flag off). See
+      # packages/core/config/default.js -> ui.simple.
+      HIVERELAY_UI_SIMPLE: "true"
 
       # Authenticate the dashboard/wizard behind Umbrel's app_proxy. The relay
       # embeds a management token (derived from $APP_SEED) into the HTML it

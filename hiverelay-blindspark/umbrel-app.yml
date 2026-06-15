@@ -2,7 +2,7 @@ manifestVersion: 1
 id: hiverelay-blindspark
 category: networking
 name: Blindspark
-version: "0.16.1"
+version: "0.16.2"
 tagline: A blind relay that keeps peer-to-peer apps online
 description: >-
   Blindspark turns your Umbrel into a blind relay for the Pear / Holepunch
@@ -75,7 +75,8 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  Community App Store build of Blindspark by HiveRelay — a blind relay for
-  the Pear / Holepunch ecosystem. Same image as the pending official App
-  Store submission; packaged here for testing on your own Umbrel.
+  Simpler, one-page dashboard. Blindspark now shows a single clean screen —
+  your relay's name and key, live status, peers, and how much encrypted data
+  it's holding and serving — instead of the full multi-tab operator console.
+  Same blind relay underneath; just less to wade through on a home server.
 submitter: bigdestiny2
