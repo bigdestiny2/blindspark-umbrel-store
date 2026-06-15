@@ -1,0 +1,47 @@
+# Blindspark by HiveRelay — Umbrel Community App Store packaging.
+#
+# Community-store variant of umbrel-app/docker-compose.yml from the main repo.
+# Two things differ from the official-store package, both required by Umbrel's
+# community-store rules:
+#   - the app id is prefixed with the store id  ->  hiverelay-blindspark
+#   - so the web container is  hiverelay-blindspark_web_1  and app_proxy's
+#     APP_HOST must point at that name.
+#
+# Everything else matches the official package:
+#   - Multi-arch image (linux/amd64, linux/arm64), pinned by sha256 digest.
+#   - Runs as non-root uid/gid 999 that owns /data.
+#   - Persistent state under ${APP_DATA_DIR}/data; identity + management token
+#     derived from Umbrel's $APP_SEED, so reinstall restores the same relay.
+#   - Only the dashboard port (9100) is fronted by app_proxy; no host ports.
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: hiverelay-blindspark_web_1
+      APP_PORT: 9100
+
+  web:
+    # Pinned by digest (verified to match the published :0.14.0 multi-arch index).
+    image: ghcr.io/bigdestiny2/p2p-hiverelay:0.14.0@sha256:b756da510558fa94a546da9708730f9e0feb64a45d6b53a019fc2e9194593ee8
+    init: true
+    restart: on-failure
+    stop_grace_period: 1m
+    user: "999:999"
+    volumes:
+      - ${APP_DATA_DIR}/data:/data
+    environment:
+      # Home for config + storage — everything persists on the data volume
+      # (config.json, the corestore, the relay keypair).
+      HOME: /data
+      HIVERELAY_LOG_LEVEL: info
+
+      # Authenticate the dashboard/wizard behind Umbrel's app_proxy. The relay
+      # embeds a management token (derived from $APP_SEED) into the HTML it
+      # serves; the bundled UI sends it back as a bearer credential. Safe ONLY
+      # because the API port is reachable solely through the authenticated
+      # app_proxy and is never published to the host/LAN.
+      HIVERELAY_UI_EXPOSE_TOKEN: "true"
+
+      # Deterministic, reinstall-safe identity + management token from Umbrel's
+      # injected $APP_SEED.
+      APP_SEED: ${APP_SEED}
