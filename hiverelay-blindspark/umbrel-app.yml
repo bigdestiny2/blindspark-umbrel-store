@@ -75,10 +75,10 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  Seed your own app. The dashboard now has a "Seed an app" button — paste a
-  drive key you published, and your relay hosts it, pins it permanently, and
-  lists it in your catalogue, where PearBrowser can find it. Copy your relay's
-  subscribe URL straight from the dashboard to add it in PearBrowser. Apps now
-  show their icons in the hosted-apps list. Same blind relay underneath — it
-  still can't read what it holds.
+  Blindspark keeps Pear/Holepunch apps online by holding their encrypted
+  data — content it can verify and serve but never read. New in this
+  release: you can now seed your own app straight from the dashboard
+  (paste a drive key you published and it's hosted, pinned, and listed in
+  your catalogue for PearBrowser to find), apps show their icons, and you
+  can copy your relay's PearBrowser subscribe URL in one tap.
 submitter: bigdestiny2
