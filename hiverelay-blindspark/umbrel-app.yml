@@ -2,7 +2,7 @@ manifestVersion: 1
 id: hiverelay-blindspark
 category: networking
 name: Blindspark
-version: "0.17.0"
+version: "0.18.0"
 tagline: A blind relay that keeps peer-to-peer apps online
 description: >-
   Blindspark turns your Umbrel into a blind relay for the Pear / Holepunch
@@ -75,10 +75,5 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  Blindspark keeps Pear/Holepunch apps online by holding their encrypted
-  data — content it can verify and serve but never read. New in this
-  release: you can now seed your own app straight from the dashboard
-  (paste a drive key you published and it's hosted, pinned, and listed in
-  your catalogue for PearBrowser to find), apps show their icons, and you
-  can copy your relay's PearBrowser subscribe URL in one tap.
+  Blindspark keeps Pear/Holepunch apps online by holding their encrypted data — content it can verify and serve but never read. New in this release: operators can optionally charge for seeding (paid pin-lease, off by default — self-host stays free), a relay’s catalogue can be published as a replicable, signed feed that apps verify peer-to-peer instead of polling, and a fail-closed privacy guard now gates the local app-runtime bridge.
 submitter: bigdestiny2
