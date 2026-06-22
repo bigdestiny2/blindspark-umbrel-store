@@ -2,7 +2,7 @@ manifestVersion: 1
 id: hiverelay-blindspark
 category: networking
 name: Blindspark
-version: "0.19.0"
+version: "0.19.4"
 tagline: A blind relay that keeps peer-to-peer apps online
 description: >-
   Blindspark turns your Umbrel into a blind relay for the Pear / Holepunch
@@ -75,5 +75,5 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  Blindspark keeps Pear/Holepunch apps online by holding their encrypted data — content it can verify and serve but never read. New in v0.19.0: your relay is now discoverable from its public key alone — it publishes a signed record to the DHT so apps can resolve its current address with no hardcoded address and no directory. Also included since the last release: an optional Services tab to host an on-device AI model (off by default), a richer signed, queryable catalogue index that apps replicate peer-to-peer, and honest storage accounting that safely reclaims space from superseded app versions.
+  Blindspark keeps Pear/Holepunch apps online by holding their encrypted data — content it can verify and serve but never read. New in v0.19.4: storage accounting now measures real on-disk usage, so the relay caps adoption correctly and won’t overfill its disk (fixes a disk-full bug); optional poker services (a card-blind game substrate) you can provide over HTTP, WebSocket, and pure peer-to-peer; and catalogBeeKey advertising of a curated, signed P2P catalogue apps prefer over HTTP. Plus v0.19.0’s DHT-resolvable discovery — your relay is reachable from its public key alone. The relay still stores only end-to-end-encrypted data it cannot read.
 submitter: bigdestiny2
