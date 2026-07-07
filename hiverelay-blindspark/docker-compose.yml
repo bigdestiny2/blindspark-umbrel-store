@@ -21,8 +21,8 @@ services:
       APP_PORT: 9100
 
   web:
-    # Pinned by digest (verified to match the published :0.19.4 multi-arch index).
-    image: ghcr.io/bigdestiny2/p2p-hiverelay:0.20.0@sha256:0b8857cda2d0e399031a135a0c5f9c8a2ec6fa77cf64ed1c59aba58351c9eae1
+    # Pinned by digest (verified to match the published :0.24.2 multi-arch index).
+    image: ghcr.io/bigdestiny2/p2p-hiverelay:0.24.2@sha256:c8d848466b7113213caa2acb8017f23161b1d96abad75d493579e57c472e957d
     init: true
     restart: on-failure
     stop_grace_period: 1m

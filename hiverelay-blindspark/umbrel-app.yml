@@ -2,7 +2,7 @@ manifestVersion: 1
 id: hiverelay-blindspark
 category: networking
 name: Blindspark
-version: "0.20.0"
+version: "0.24.2"
 tagline: A blind relay that keeps peer-to-peer apps online
 description: >-
   Blindspark turns your Umbrel into a blind relay for the Pear / Holepunch
@@ -75,5 +75,5 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  Blindspark keeps Pear/Holepunch apps online by holding their encrypted data — content it can verify and serve but never read. New in v0.20.0: trustless seed verification — anyone can confirm a relay genuinely holds and serves an app without trusting it. The relay can produce signed, per-block cryptographic proofs, verified against the app's own key, via the optional storage-proof service; clients can audit any relay's content directly. Privacy is preserved — blind drives stay unprovable, so proofs never reveal anything a relay holds that wasn't already public. Carries forward honest on-disk accounting, optional poker services, the signed P2P catalogue, and DHT-resolvable discovery. The relay still stores only end-to-end-encrypted data it cannot read.
+  Blindspark keeps Pear/Holepunch apps online by holding their encrypted data — content it can verify and serve but never read. Big update since v0.20.0: five new blind relay services — an encrypted wake-up push bridge, a signed single-writer append log (the "outbox" that lets web and mobile apps read and write through the relay), a content-addressed blind blob store, signed availability observations, and a signed self-healing repair loop — all relay-blind and hardened via adversarial review. Blind-shard custody dispersal (k-of-n social key recovery) is proven live across the relay fleet. v0.24.2 adds a browser CORS fix so web apps can reach the relay's outbox directly from the page. Carries forward trustless seed verification, honest on-disk accounting, the signed P2P catalogue, and DHT-resolvable discovery. Your relay identity and data are preserved across the update — the relay still stores only end-to-end-encrypted data it cannot read.
 submitter: bigdestiny2
