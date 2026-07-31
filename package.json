@@ -1,0 +1,10 @@
+{
+  "name": "hiverelay-blindspark-store",
+  "version": "0.24.2",
+  "private": true,
+  "description": "HiveRelay community app store for Umbrel (Blindspark app). `npm run validate` checks the store layout against Umbrel community-store rules and the release pipeline's expectations.",
+  "scripts": {
+    "validate": "node scripts/validate.mjs"
+  },
+  "license": "Apache-2.0"
+}
