@@ -2,7 +2,7 @@ manifestVersion: 1
 id: hiverelay-blindspark
 category: networking
 name: Blindspark
-version: "0.24.2"
+version: "0.25.0-rc.9"
 tagline: A blind relay that keeps peer-to-peer apps online
 description: >-
   Blindspark turns your Umbrel into a blind relay for the Pear / Holepunch
@@ -75,5 +75,6 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  Blindspark keeps Pear/Holepunch apps online by holding their encrypted data — content it can verify and serve but never read. Big update since v0.20.0: five new blind relay services — an encrypted wake-up push bridge, a signed single-writer append log (the "outbox" that lets web and mobile apps read and write through the relay), a content-addressed blind blob store, signed availability observations, and a signed self-healing repair loop — all relay-blind and hardened via adversarial review. Blind-shard custody dispersal (k-of-n social key recovery) is proven live across the relay fleet. v0.24.2 adds a browser CORS fix so web apps can reach the relay's outbox directly from the page. Carries forward trustless seed verification, honest on-disk accounting, the signed P2P catalogue, and DHT-resolvable discovery. Your relay identity and data are preserved across the update — the relay still stores only end-to-end-encrypted data it cannot read.
+  Blindspark v0.25.0-rc.9: synchronized HiveRelay release metadata for Docker,
+  Umbrel, StartOS, TrueNAS, Unraid, ZimaOS/CasaOS, Runtipi, and HexOS.
 submitter: bigdestiny2

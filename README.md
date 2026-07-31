@@ -19,7 +19,7 @@ official Umbrel App Store.
 
 ## What it runs
 
-- Image: `ghcr.io/bigdestiny2/p2p-hiverelay:0.14.0` (multi-arch, digest-pinned).
+- Image: `ghcr.io/bigdestiny2/p2p-hiverelay:0.25.0-rc.9` (multi-arch, digest-pinned).
 - Reached only through Umbrel's authenticated app proxy on port 9100 — no host
   ports are published.
 - State persists under the app data volume; the relay identity is derived from

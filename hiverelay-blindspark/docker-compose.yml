@@ -22,7 +22,7 @@ services:
 
   web:
     # Pinned by digest (verified to match the published :0.24.2 multi-arch index).
-    image: ghcr.io/bigdestiny2/p2p-hiverelay:0.24.2@sha256:c8d848466b7113213caa2acb8017f23161b1d96abad75d493579e57c472e957d
+    image: ghcr.io/bigdestiny2/p2p-hiverelay:0.25.0-rc.9@sha256:4ae21074848a944f4d7d26b8bf9c7eb28fce9e6a36c2dc8f70855499523cc5c6
     init: true
     restart: on-failure
     stop_grace_period: 1m
