@@ -2,7 +2,7 @@ manifestVersion: 1
 id: hiverelay-blindspark
 category: networking
 name: Blindspark
-version: "0.25.0-rc.9"
+version: "0.26.0-rc.3"
 tagline: A blind relay that keeps peer-to-peer apps online
 description: >-
   Blindspark turns your Umbrel into a blind relay for the Pear / Holepunch
@@ -75,6 +75,6 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  Blindspark v0.25.0-rc.9: synchronized HiveRelay release metadata for Docker,
+  Blindspark v0.26.0-rc.3: synchronized HiveRelay release metadata for Docker,
   Umbrel, StartOS, TrueNAS, Unraid, ZimaOS/CasaOS, Runtipi, and HexOS.
 submitter: bigdestiny2
