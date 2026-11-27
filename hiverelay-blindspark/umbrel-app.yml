@@ -2,8 +2,8 @@ manifestVersion: 1
 id: hiverelay-blindspark
 category: networking
 name: Blindspark
-version: "0.26.0-rc.7"
-tagline: A blind relay that keeps peer-to-peer apps online
+version: "0.27.0-rc.1"
+tagline: Universal blind P2P relay box — Pear, Nostr & Blossom ready
 description: >-
   Blindspark turns your Umbrel into a blind relay for the Pear / Holepunch
   peer-to-peer app ecosystem. It seeds encrypted Hyperdrives — data the
@@ -75,6 +75,9 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  Blindspark v0.26.0-rc.7: synchronized HiveRelay release metadata for Docker,
-  Umbrel, StartOS, TrueNAS, Unraid, ZimaOS/CasaOS, Runtipi, and HexOS.
+  Blindspark v0.27.0-rc.1 (Universal Blind Relay v2): RelayKernel v1 blind Hypercore
+  seeding with Merkle PoR, Blossom + NIP-5A browser app hosting, Nostr WS, OutboxLog +
+  Notify + MLS KeyPackages, non-custodial Solana SOL / BTC Lightning L402 / Cashu / x402
+  earning, pluggable protocol compatibility namespaces, redesigned Setup Wizard dashboard,
+  and automatic in-place migration from v0.26.x /data volumes.
 submitter: bigdestiny2
