@@ -2,7 +2,7 @@ manifestVersion: 1
 id: hiverelay-blindspark
 category: networking
 name: Blindspark
-version: "0.27.0-rc.1"
+version: "0.27.0-rc.2"
 tagline: Universal blind P2P relay box — Pear, Nostr & Blossom ready
 description: >-
   Blindspark turns your Umbrel into a blind relay for the Pear / Holepunch
@@ -75,9 +75,11 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  Blindspark v0.27.0-rc.1 (Universal Blind Relay v2): RelayKernel v1 blind Hypercore
-  seeding with Merkle PoR, Blossom + NIP-5A browser app hosting, Nostr WS, OutboxLog +
-  Notify + MLS KeyPackages, non-custodial Solana SOL / BTC Lightning L402 / Cashu / x402
-  earning, pluggable protocol compatibility namespaces, redesigned Setup Wizard dashboard,
-  and automatic in-place migration from v0.26.x /data volumes.
+  Blindspark v0.27.0-rc.2 (Universal Blind Relay v2): adds native Solana SPL USDC
+  x402 v2 payment settlement alongside Base USDC and Cashu/Lightning, signed
+  /.well-known/x402-prices with 3 zero-config Box Wizard presets (budget / standard /
+  high-demand), publisher-funded Blossom & blind-seed leases (POST /x402/lease),
+  prepaid blinded session passes (POST /x402/pass, hr-pass-v1 & Cashu ecash
+  conversion), browser-compatible in-band Nostr WS admission with zero-drop renewal,
+  and dual-signed UsageReceipts (POST /x402/receipt/cosign).
 submitter: bigdestiny2
