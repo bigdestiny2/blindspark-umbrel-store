@@ -22,7 +22,7 @@ services:
 
   web:
     # Pinned by digest (cosign keyless-signed multi-arch linux/amd64 + linux/arm64 index).
-    image: ghcr.io/bigdestiny2/p2p-hiverelay:0.27.0-rc.2@sha256:49f1e7f15c12353f7119dd26c568aa63b5a88bb423b1ac505a8f22fb68a04261
+    image: ghcr.io/bigdestiny2/p2p-hiverelay:0.27.0-rc.3@sha256:a8cbd9baeba231b997aa676dc3df1987e602fb5a39a551505850b94ea910f9cf
     init: true
     restart: on-failure
     stop_grace_period: 1m
